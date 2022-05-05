@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('../fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato-medium-webfont.woff2') format('woff2'),
+    url('../fonts/lato-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+    url('../fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato-black-webfont.woff2') format('woff2'),
+    url('../fonts/lato-black-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  font-family: 'lato', sans-serif;
+  font-style: normal;
+  overflow-y: auto;
+}
+
+:root {
+  --color-for-dark: #FFFFFF;
+  --color-gray: #d2d2d2;
+  --color-title: #212121;
+  --color-light: #b3b3b3;
+  --color-light-gray: #cecece;
+  --color-dark: #2c2c2c;
+  --color-priority: #f9f9f9;
+  --color-black: #000000;
+  --color-text: #1f1f1f;
+  --color-hover-list: #f2f2f2;
+  --color-yellow: #ffecae;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-style: normal;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 60px 220px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--color-title);
+}
+
+.title-bold {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--color-black);
+}
+
+/* ----------header----------  */
+
