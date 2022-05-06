@@ -8,10 +8,16 @@
   <title>Master TAO cargo</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-favicon.png">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./styles/main.css">
 
   <script defer src="./js/app.js"></script>
-  <script defer src="./js/app.min.js"></script>
+  <!-- <script defer src="./js/app.min.js"></script> -->
 </head>
 
 <body>
@@ -49,9 +55,62 @@
           </li>
         </ul>
       </nav>
+      <div class="header__burger burger">
+        <span class="burger__menu menu1"></span>
+        <span class="burger__menu menu2"></span>
+        <span class="burger__menu menu3"></span>
+      </div>
+      <button class="header__btn btn">Оставить заявку</button>
     </div>
   </header>
   <main>
+    <section class="hero">
+      <!-- <div class="container hero__container"> -->
+        <div class="hero__swiper swiper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide slide1">
+              <div class="container hero__container">
+                <div class="swiper__box">
+                  <h2 class="swiper__title swiper-title">Прямое КАРГО из Китая</h2>
+                  <p class="swiper__text">Доставляем любые грузы из Китая по честной цене</p>
+                  <button class="swiper__btn btn">Рассчитать стоимость</button>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide slide2">
+              <div class="container hero__container">
+                <div class="swiper__box">
+                  <h2 class="swiper__title swiper-title">Гарантируем сроки!</h2>
+                  <p class="swiper__text">Если мы не уложимся в обозначенные сроки, доставка груза со скидкой до 90%</p>
+                  <button class="swiper__btn btn">Рассчитать стоимость</button>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide slide3">
+              <div class="container hero__container">
+                <div class="swiper__box">
+                  <h2 class="swiper__title swiper-title">Выкуп товара с ТаоБао, 1688</h2>
+                  <p class="swiper__text">Выкуп и доставка товаров с китайских торговых площадок. </p>
+                  <button class="swiper__btn btn">Рассчитать стоимость</button>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide slide4">
+              <div class="container hero__container">
+                <div class="swiper__box">
+                  <h2 class="swiper__title swiper-title">Экспресс авто доставка</h2>
+                  <p class="swiper__text">Доставка автотранспортом из Китая в Россию от 15 дней, от $0,5/кг</p>
+                  <button class="swiper__btn btn">Рассчитать стоимость</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      <!-- </div> -->
+    </section>
 
 
   </main>
