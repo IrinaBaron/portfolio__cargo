@@ -23,14 +23,14 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'proxima';
   src: url('../fonts/proximanova_black-webfont.woff2') format('woff2'),
        url('../fonts/proximanova_black-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -46,7 +46,7 @@ html {
   /* --color-dark: #2c2c2c; */
   /* --color-priority: #f9f9f9; */
   --color-black: #000000;
-  /* --color-text: #1f1f1f; */
+  --color-green: #89C249;
   /* --color-hover-list: #f2f2f2; */
   --color-orange: #E58D35;
 }
@@ -96,6 +96,15 @@ p {
   font-weight: 700;
   font-size: 56px;
   line-height: 126%;
+  text-transform: uppercase;
+  color: var(--color-for-dark);
+}
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 124.5%;
   text-transform: uppercase;
   color: var(--color-for-dark);
 }
@@ -269,4 +278,127 @@ p {
 .swiper-pagination-bullet-active {
   background-color: var(--color-for-dark);
   opacity: 0.9;
+}
+
+/* ------------calculate */
+
+.calculate {
+  height: auto;
+  background-image: url('../images/man.png');
+  background-position: right 38% center;
+  background-repeat: no-repeat;
+}
+
+.calculate__container {
+  padding-top: 97px;
+  padding-bottom: 110px;
+}
+
+.calculate__title {
+  position: relative;
+  margin-bottom: 62px;
+  max-width: 53%;
+}
+
+.calculate__title::after {
+  content: '';
+  position: absolute;
+  top: 65px;
+  right: 15px;
+  width: 85px;
+  height: 2px;
+  background-color: var(--color-green);
+}
+
+/* -----------why */
+
+.why__container {
+  padding-top: 90px;
+  padding-bottom: 112px;
+  background: linear-gradient(0deg, #363A4D, #363A4D), #F7F7F7;
+  border-radius: 20px;
+}
+
+.why__title {
+  margin-bottom: 51px;
+}
+
+.why__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.why__item {
+  margin-bottom: 48px;
+  max-width: 263px;
+  text-align: center;
+}
+
+.why__item:not(:nth-child(4n)) {
+  margin-right: 50px;
+}
+
+.why__icons {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 93px;
+  height: 93px;
+  box-shadow: 0px 4px 13px rgba(30, 35, 66, 0.11);
+  border-radius: 90px;
+  background-color: var(--color-green);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.why__icons::before {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  width: 113px;
+  height: 113px;
+  border: 1px solid #6C7188;
+  border-radius: 90px;
+}
+
+.why1 {
+  background-image: url('../images/why/file-1.svg');
+}
+
+.why2 {
+  background-image: url('../images/why/file-2.svg');
+}
+
+.why3 {
+  background-image: url('../images/why/file-3.svg');
+}
+
+.why4 {
+  background-image: url('../images/why/file-4.svg');
+}
+
+.why5 {
+  background-image: url('../images/why/file-5.svg');
+}
+
+.why6 {
+  background-image: url('../images/why/file-6.svg');
+}
+
+.why7 {
+  background-image: url('../images/why/file-7.svg');
+}
+
+.why8 {
+  background-image: url('../images/why/file-8.svg');
+}
+
+.why__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 124.5%;
+  text-align: center;
+  color: var(--color-for-dark);
 }
