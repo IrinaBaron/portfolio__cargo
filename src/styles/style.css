@@ -502,3 +502,25 @@ p {
   text-align: center;
   color: var(--color-for-dark);
 }
+
+/* --------delivery */
+.delivery__container {
+  padding-top: 97px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.delivery__title {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.delivery__title::after {
+  content: '';
+  position: absolute;
+  bottom: -19px;
+  left: 46%;
+  width: 85px;
+  height: 2px;
+  background-color: var(--color-green);
+}
