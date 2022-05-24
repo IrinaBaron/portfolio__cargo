@@ -27,11 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       slidesPerView: 3,
       spaceBetween: 30,
-      pagination: {
-        el: ' .swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      },
       navigation: {
         nextEl: '.delivery__swiper .swiper-button-next',
         prevEl: '.delivery__swiper .swiper-button-prev',
@@ -42,6 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
       },
 
     });
+
+    const swiper3 = new Swiper('.services__swiper', {
+
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.services__swiper .swiper-button-next',
+        prevEl: '.services__swiper .swiper-button-prev',
+      },
+      a11y: {
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+      },
+
+    });
+
     
   } catch (error) {
     console.log(error)
